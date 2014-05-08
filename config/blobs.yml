@@ -1,1 +1,9 @@
---- {}
+---
+zookeeper/zookeeper-3.4.6.tar.gz:
+  object_id: 8ecde660-d3af-4514-b955-ce9256bf8a3c
+  sha: 2a9e53f5990dfe0965834a525fbcad226bf93474
+  size: 17699306
+openjdk7/j2sdk-image-x86_64-u60-b13-20140425.tar.bz2:
+  object_id: ed697ad0-93e5-4405-85f8-97e9f13d03ef
+  sha: dd0a963f2c0572f83e8985b811f80f9d6a78876f
+  size: 149873496
