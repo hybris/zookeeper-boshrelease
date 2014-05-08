@@ -1,0 +1,22 @@
+---
+packages:
+- name: zookeeper
+  version: 1
+  sha1: 21ec3babac698ca4fdf3f35cbfae4403c1749b36
+  fingerprint: 5ef2dda0c2e94fc74fe976377ef8da979477abe2
+  dependencies:
+  - openjdk7
+- name: openjdk7
+  version: 1
+  sha1: 0d6d47daa80253c167a97da435f3a9337a7c2b31
+  fingerprint: fa75554ae668e796c4364890e291bd1fcbe44777
+  dependencies: []
+jobs:
+- name: zookeeper
+  version: 1
+  fingerprint: 279faadb9b08eb5d0a02a28ff379d74ebb7bf697
+  sha1: 846a682ec5d91fcb22bd248285dd7068cfd8f491
+commit_hash: 3a819104
+uncommitted_changes: true
+name: zoo.hybris
+version: 1
