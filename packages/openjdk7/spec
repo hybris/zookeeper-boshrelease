@@ -1,0 +1,7 @@
+---
+name: openjdk7
+
+dependencies: []
+
+files:
+- openjdk7/j2sdk-image-x86_64-u60-b13-20140425.tar.bz2

@@ -1,0 +1,9 @@
+---
+name: zookeeper
+templates:
+  ctl.erb: bin/ctl
+  zoo.cfg.erb: conf/zoo.cfg
+
+packages:
+- openjdk7
+- zookeeper
