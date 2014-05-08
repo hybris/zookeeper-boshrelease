@@ -5,4 +5,4 @@ set -e
 
 tar xzf zookeeper/zookeeper-3.4.6.tar.gz
 
-mv zookeeper-3.4.6 ${BOSH_INSTALL_TARGET}
+mv zookeeper-3.4.6/* ${BOSH_INSTALL_TARGET}

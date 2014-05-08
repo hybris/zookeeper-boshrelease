@@ -3,6 +3,8 @@ name: zookeeper
 templates:
   ctl.erb: bin/ctl
   zoo.cfg.erb: conf/zoo.cfg
+  configuration.xsl.erb: conf/configuration.xsl
+  log4j.properties.erb: conf/log4j.properties
 
 packages:
 - openjdk7

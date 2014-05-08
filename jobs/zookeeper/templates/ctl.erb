@@ -1,6 +1,10 @@
+#!/bin/bash
+
+
 RUN_DIR=/var/vcap/sys/run/zookeeper
 LOG_DIR=/var/vcap/sys/log/zookeeper
 JOB_DIR=/var/vcap/jobs/zookeeper
+BIN_DIR=/var/vcap/packages/zookeeper
 PIDFILE=${RUN_DIR}/pid
 
 case $1 in
@@ -9,23 +13,23 @@ case $1 in
     mkdir -p $RUN_DIR $LOG_DIR
     chown -R vcap:vcap $RUN_DIR $LOG_DIR
 
-    echo $$ >> $PIDFILE
+    echo $$ > $PIDFILE
 
     cd /var/vcap/packages/zookeeper
 
-    export PATH=/var/vcap/packages/openjdk7/j2sdk-image/bin:$PATH
-    export JAVA_HOME=/var/vcap/packages/openjdk7/j2sdk-image/
+    export PATH=/var/vcap/packages/openjdk7/bin:$PATH
+    export JAVA_HOME=/var/vcap/packages/openjdk7/
 
-    exec /var/vcap/packages/openjdk7/j2sdk-image/bin/java \
-        -Dzookeeper.log.dir="${LOG_DIR}"
-        -Dzookeeper.root.logger="INFO"
-        -cp "${JOB_DIR}/build/classes:${JOB_DIR}/build/lib/*.jar:${JOB_DIR}/lib/slf4j-log4j12-1.6.1.jar:${JOB_DIR}/lib/slf4j-api-1.6.1.jar:${JOB_DIR}/lib/netty-3.7.0.Final.jar:${JOB_DIR}/lib/log4j-1.2.16.jar:${JOB_DIR}/lib/jline-0.9.94.jar:${JOB_DIR}/zookeeper-3.4.6.jar:${JOB_DIR}/src/java/lib/*.jar:${JOB_DIR}/conf:" \
+    exec /var/vcap/packages/openjdk7/bin/java \
+        -Dzookeeper.log.dir="${LOG_DIR}" \
+        -Dzookeeper.root.logger="INFO" \
+        -cp "${BIN_DIR}/build/classes:${BIN_DIR}/build/lib/*.jar:${BIN_DIR}/lib/slf4j-log4j12-1.6.1.jar:${BIN_DIR}/lib/slf4j-api-1.6.1.jar:${BIN_DIR}/lib/netty-3.7.0.Final.jar:${BIN_DIR}/lib/log4j-1.2.16.jar:${BIN_DIR}/lib/jline-0.9.94.jar:${BIN_DIR}/zookeeper-3.4.6.jar:${BIN_DIR}/src/java/lib/*.jar:${JOB_DIR}/conf:" \
         -Dcom.sun.management.jmxremote \
         -Dcom.sun.management.jmxremote.local.only=false \
         org.apache.zookeeper.server.quorum.QuorumPeerMain \
         "${JOB_DIR}/conf/zoo.cfg" \
         >  $LOG_DIR/web_ui.stdout.log \
-        >> $LOG_DIR/web_ui.stderr.log
+        >> $LOG_DIR/web_ui.stderr.log 
 
     ;;
 

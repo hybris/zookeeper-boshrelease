@@ -4,5 +4,5 @@ set -e -x
 
 tar xjf openjdk7/j2sdk-image-x86_64-u60-b13-20140425.tar.bz2
 
-mv j2sdk-image ${BOSH_INSTALL_TARGET}
+mv j2sdk-image/* ${BOSH_INSTALL_TARGET}
 
