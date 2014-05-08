@@ -5,7 +5,15 @@ templates:
   zoo.cfg.erb: conf/zoo.cfg
   configuration.xsl.erb: conf/configuration.xsl
   log4j.properties.erb: conf/log4j.properties
+  myid.erb: conf/myid
 
 packages:
 - openjdk7
 - zookeeper
+
+
+properties:
+  zookeeper.servers:
+    description: "All zookeeper IP's"
+  networks.apps:
+    description: "Used to get our IP address"
