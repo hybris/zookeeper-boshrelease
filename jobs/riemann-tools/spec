@@ -1,7 +1,8 @@
 ---
 name: riemann-tools
 templates:
-  ctl.erb: bin/ctl
+  ctl-net.erb: bin/ctl-net
+  ctl-health.erb: bin/ctl-health
 
 packages:
 - ruby
