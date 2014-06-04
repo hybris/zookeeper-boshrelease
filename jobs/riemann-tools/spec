@@ -1,0 +1,14 @@
+---
+name: riemann-tools
+templates:
+  ctl.erb: bin/ctl
+
+packages:
+- ruby
+- riemann-tools
+
+properties:
+  riemann.server: 
+    description: "IP of the riemann server."
+  riemann.suffix:
+    description: "Suffix for the riemann host"
