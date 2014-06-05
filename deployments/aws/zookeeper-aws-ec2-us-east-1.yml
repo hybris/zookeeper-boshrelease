@@ -1,5 +1,5 @@
 ---
-name: zoo-dev
+name: zookeeper-aws-ec2-us-east-1
 director_uuid: c2c7b674-fdf8-4ded-922c-1b94ae9a62c2
 
 releases:
@@ -19,6 +19,7 @@ update:
   canary_watch_time: 30000-240000
   update_watch_time: 30000-600000
   max_in_flight: 1
+  serial: false
 
 resource_pools:
 - name: default
@@ -67,3 +68,5 @@ jobs:
       - 10.10.112.11
       - 10.10.112.12
       - 10.10.112.13
+
+properties: {}
