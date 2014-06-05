@@ -1,0 +1,37 @@
+---
+packages:
+- name: zookeeper
+  version: 1
+  sha1: 21ec3babac698ca4fdf3f35cbfae4403c1749b36
+  fingerprint: 5ef2dda0c2e94fc74fe976377ef8da979477abe2
+  dependencies:
+  - openjdk7
+- name: openjdk7
+  version: 1
+  sha1: 0d6d47daa80253c167a97da435f3a9337a7c2b31
+  fingerprint: fa75554ae668e796c4364890e291bd1fcbe44777
+  dependencies: []
+- name: ruby
+  version: 1
+  sha1: c8b29c874900ab2223a67402769ca25f0a4244c1
+  fingerprint: b47e609e8e1768bc4d6b5a211e730d4ffc2fa6d1
+  dependencies: []
+- name: riemann-tools
+  version: 1
+  sha1: 70e3e7bb634d95ed1c9330f912fadd299d08c8ec
+  fingerprint: 6ffe17d70ed6a7753bd6b28d7ddf58275cd3c32d
+  dependencies:
+  - ruby
+jobs:
+- name: zookeeper
+  version: 1
+  fingerprint: 279faadb9b08eb5d0a02a28ff379d74ebb7bf697
+  sha1: 846a682ec5d91fcb22bd248285dd7068cfd8f491
+- name: riemann-tools
+  version: 2
+  fingerprint: 48e443119ccb782d7cd06b4e7c8382d561522a71
+  sha1: 82a538d0c614a58b5621e4b882697c1c293cae6d
+commit_hash: 6782bf08
+uncommitted_changes: true
+name: hybris-zookeeper
+version: 3
