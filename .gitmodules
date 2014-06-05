@@ -7,3 +7,9 @@
 [submodule "packages/riemann-tools"]
 	path = packages/riemann-tools
 	url = ssh://git@stash.hybris.com:7999/idefix/bosh-package-riemann-tools.git
+[submodule "src/riemann-tools"]
+	path = src/riemann-tools
+	url = ssh://git@stash.hybris.com:7999/idefix/bosh-src-riemann-tools.git
+[submodule "jobs/riemann-tools"]
+	path = jobs/riemann-tools
+	url = ssh://git@stash.hybris.com:7999/idefix/bosh-job-riemann-tools.git
