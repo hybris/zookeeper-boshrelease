@@ -8,7 +8,7 @@ templates:
   myid.erb: conf/myid
 
 packages:
-- openjdk7
+- java7
 - zookeeper
 
 

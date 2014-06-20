@@ -1,20 +1,20 @@
 # The number of milliseconds of each tick
 tickTime=2000
-# The number of ticks that the initial 
+# The number of ticks that the initial
 # synchronization phase can take
 initLimit=10
-# The number of ticks that can pass between 
+# The number of ticks that can pass between
 # sending a request and getting an acknowledgement
 syncLimit=5
 # the directory where the snapshot is stored.
-# do not use /tmp for storage, /tmp here is just 
+# do not use /tmp for storage, /tmp here is just
 # example sakes.
 dataDir=/var/vcap/store/zookeeper
 # the port at which the clients will connect
 clientPort=2181
 
-
-<% p("zookeeper.servers").each_with_index do |ip,index| %>
+<% if_p("zookeeper.servers") do %>
+<% p("zookeeper.servers").each_with_index do |ip,index|%>
 server.<%= index + 1 %>=<%= ip %>:2888:3888
 <% end %>
-
+<% end %>
