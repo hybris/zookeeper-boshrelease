@@ -2,7 +2,7 @@
 name: zookeeper
 
 dependencies:
-- openjdk7
+- java7
 
 files:
 - zookeeper/zookeeper-3.4.6.tar.gz

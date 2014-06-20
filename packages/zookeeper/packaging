@@ -1,8 +1,6 @@
 # abort script on any command that exits with a non zero value
 set -e
 
-
-
 tar xzf zookeeper/zookeeper-3.4.6.tar.gz
 
 mv zookeeper-3.4.6/* ${BOSH_INSTALL_TARGET}
