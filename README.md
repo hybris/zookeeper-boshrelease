@@ -56,4 +56,11 @@ bosh upload release releases/zookeeper-hybris-XXXX.yml
     <td>-</td>
     <td>NEW RELEASE NAME/VERSION - COMPLETE REDESIGN!</td>
   </tr>
+  <tr>
+    <td>2014-06-24</td>
+    <td>zookeeper-hybris-2.yml</td>
+    <td>2</td>
+    <td>-</td>
+    <td>Adding offset value for index to support cluster in multizones</td>
+  </tr>
 </table>

@@ -1,0 +1,31 @@
+---
+packages:
+- name: zookeeper
+  version: !binary |-
+    YWE1ZTY0NTAwODQyZTRhNGNjY2Y4OTY4YzQ4YmIxNjdmZGQ5ZWFiZg==
+  sha1: !binary |-
+    MmEyZDU2OTAxZGJiNGNlYzJiMzAzMjkxOWMyYzM5YzQ4MWIxMzE1MQ==
+  fingerprint: !binary |-
+    YWE1ZTY0NTAwODQyZTRhNGNjY2Y4OTY4YzQ4YmIxNjdmZGQ5ZWFiZg==
+  dependencies:
+  - java7
+- name: java7
+  version: !binary |-
+    MjFhOGQyZWFiMjkyODFkZGU2ZTk3NjNiM2EzNDE1Y2M4Mzc2ZWY0Ng==
+  sha1: !binary |-
+    MjNmYjUyZjczYjBlZjM2MWJjYTFhMjkyOTBiZDE2MzI1YWFkNjUyNw==
+  fingerprint: !binary |-
+    MjFhOGQyZWFiMjkyODFkZGU2ZTk3NjNiM2EzNDE1Y2M4Mzc2ZWY0Ng==
+  dependencies: []
+jobs:
+- name: zookeeper
+  version: !binary |-
+    YzdkNjlkNzQwNGExZDhhNTQ4MzIzZjcyZGZjMDE5MzI2MmY3MjgwZA==
+  fingerprint: !binary |-
+    YzdkNjlkNzQwNGExZDhhNTQ4MzIzZjcyZGZjMDE5MzI2MmY3MjgwZA==
+  sha1: !binary |-
+    ZDQyM2E4ODcyMGRkMzQwMTk5YjgzYTg0MDc2ZTY3MzRkNjY3OWZlMw==
+commit_hash: 9d834b73
+uncommitted_changes: true
+name: zookeeper-hybris
+version: '2'
