@@ -15,5 +15,5 @@ clientPort=2181
 
 <% if_p("zookeeper.servers") do %>
 <% p("zookeeper.servers").flatten.each_with_index do |ip,index|%>
-server.<%= index + 1 %>=<%= ip %>:2888:3888<% end %>
+server.<%= index + 1 + p("zookeeper.index_offset") %>=<%= ip %>:2888:3888<% end %>
 <% end %>

@@ -15,5 +15,8 @@ packages:
 properties:
   zookeeper.servers:
     description: "All zookeeper IP's"
+  zookeeper.index_offset:
+    description: "Offset value to add to the spec.index"
+    default: 0
   networks.apps:
     description: "Used to get our IP address"
