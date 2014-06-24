@@ -63,4 +63,11 @@ bosh upload release releases/zookeeper-hybris-XXXX.yml
     <td>-</td>
     <td>Adding offset value for index to support cluster in multizones</td>
   </tr>
+  <tr>
+    <td>2014-06-24</td>
+    <td>zookeeper-hybris-3.yml</td>
+    <td>3</td>
+    <td>-</td>
+    <td>small fix for cluster support</td>
+  </tr>
 </table>
