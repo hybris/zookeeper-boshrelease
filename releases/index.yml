@@ -1,8 +1,10 @@
 ---
 builds:
-  !binary "MGExM2FmZTViMDBiOGRkZTBjNjI5ZmVjYzE5OWU3YjE5YzMzZjYxYw==":
+  0a13afe5b00b8dde0c629fecc199e7b19c33f61c:
     version: '1'
-  !binary "YTdmMzAzY2NhZWYyYTNmM2Q1Mzc5OThiOWNmYjhmNTM4ZTMwMDk4NA==":
+  a7f303ccaef2a3f3d537998b9cfb8f538e300984:
     version: '2'
-  !binary "MGRmYzUxOGM1YTgzMmY1ZWQ3OWVlZmY0NGZiNjkxMDc0OWZlODFhMg==":
+  0dfc518c5a832f5ed79eeff44fb6910749fe81a2:
     version: '3'
+  f25f5713e00a9a037ccf3588e88384b1a69c7cd7:
+    version: '4'
