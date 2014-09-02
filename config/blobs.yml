@@ -1,11 +1,13 @@
 ---
 zookeeper/zookeeper-3.4.6.tar.gz:
   object_id: 42470f2d-ee86-4923-834b-29a7e6a8620b
-  sha: !binary |-
-    MmE5ZTUzZjU5OTBkZmUwOTY1ODM0YTUyNWZiY2FkMjI2YmY5MzQ3NA==
+  sha: 2a9e53f5990dfe0965834a525fbcad226bf93474
   size: 17699306
 java7/openjdk-1.7.0_55.tar.gz:
   object_id: ac6c8e9e-2aaf-4fb5-92a4-9f60b8f24ada
-  sha: !binary |-
-    MDc4OGI5MWIzNWJmZGM2MjgxNDMxMDNiMTdkZTMxOTRjMzlhMzA1YQ==
+  sha: 0788b91b35bfdc628143103b17de3194c39a305a
   size: 31534443
+zookeeper/exhibitor-1.5.2-jar-with-dependencies.jar:
+  object_id: 066e25e2-dd0c-41f7-ab2b-109e4dda7865
+  sha: 2344217732dc736ab69b50b0574691d39820cf95
+  size: 19425377

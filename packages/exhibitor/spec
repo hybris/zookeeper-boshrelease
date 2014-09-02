@@ -1,0 +1,8 @@
+---
+name: exhibitor
+
+dependencies:
+- java7
+
+files:
+- zookeeper/exhibitor-1.5.2-jar-with-dependencies.jar

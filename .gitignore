@@ -16,3 +16,6 @@ config/private.yml
 dev_releases
 releases/*.tgz
 src_alt
+releases/**/*.tgz
+.DS_Store
+.final_builds/jobs/**/*.tgz

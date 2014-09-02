@@ -1,0 +1,45 @@
+#!/bin/bash
+
+
+RUN_DIR=/var/vcap/sys/run/exhibitor
+LOG_DIR=/var/vcap/sys/log/exhibitor
+JOB_DIR=/var/vcap/jobs/exhibitor
+BIN_DIR=/var/vcap/packages/exhibitor
+DATA_DIR=/var/vcap/store/exhibitor
+PIDFILE=${RUN_DIR}/pid
+
+case $1 in
+
+  start)
+    mkdir -p $RUN_DIR $LOG_DIR
+    mkdir -p $DATA_DIR
+    chown -R vcap:vcap $RUN_DIR $LOG_DIR
+
+    echo $$ > $PIDFILE
+
+    export PATH=/var/vcap/packages/java7/bin:$PATH
+    export JAVA_HOME=/var/vcap/packages/java7
+
+   exec /var/vcap/packages/java7/bin/java \
+       -jar ${BIN_DIR}/exhibitor-*-jar-with-dependencies.jar \
+       --configtype s3 \
+       --s3credentials ${JOB_DIR}/s3credentials \
+       --s3config <%= p('exhibitor.s3conf') %> \
+       --s3backup \
+       >  $LOG_DIR/zookeeper.stdout.log \
+       >> $LOG_DIR/zookeeper.stderr.log
+
+    ;;
+
+  stop)
+
+    kill -9 `cat $PIDFILE`
+
+    rm -f $PIDFILE
+
+    ;;
+
+  *)
+    echo "Usage: ctl {start|stop}" ;;
+
+esac
