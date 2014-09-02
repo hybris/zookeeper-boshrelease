@@ -19,3 +19,4 @@ src_alt
 releases/**/*.tgz
 .DS_Store
 .final_builds/jobs/**/*.tgz
+config/settings.yml
