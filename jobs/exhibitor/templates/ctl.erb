@@ -25,7 +25,7 @@ case $1 in
        --configtype s3 \
        --s3credentials ${JOB_DIR}/s3credentials \
        --s3config <%= p('exhibitor.s3conf') %> \
-       --s3backup \
+       --s3backup true \
        >  $LOG_DIR/zookeeper.stdout.log \
        >> $LOG_DIR/zookeeper.stderr.log
 
