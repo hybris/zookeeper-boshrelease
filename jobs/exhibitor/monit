@@ -1,5 +1,0 @@
-check process exhibitor
-  with pidfile /var/vcap/sys/run/exhibitor/pid
-  start program "/var/vcap/jobs/exhibitor/bin/ctl start"
-  stop program "/var/vcap/jobs/exhibitor/bin/ctl stop"
-  group vcap

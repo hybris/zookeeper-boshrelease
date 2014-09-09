@@ -1,4 +1,0 @@
-# abort script on any command that exits with a non zero value
-set -e
-
-mv zookeeper/exhibitor-1.5.2-jar-with-dependencies.jar  ${BOSH_INSTALL_TARGET}
