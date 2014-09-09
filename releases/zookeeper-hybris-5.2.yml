@@ -1,0 +1,22 @@
+---
+packages:
+- name: java7
+  version: 21a8d2eab29281dde6e9763b3a3415cc8376ef46
+  sha1: 23fb52f73b0ef361bca1a29290bd16325aad6527
+  fingerprint: 21a8d2eab29281dde6e9763b3a3415cc8376ef46
+  dependencies: []
+- name: zookeeper
+  version: aa5e64500842e4a4cccf8968c48bb167fdd9eabf
+  sha1: 2a2d56901dbb4cec2b3032919c2c39c481b13151
+  fingerprint: aa5e64500842e4a4cccf8968c48bb167fdd9eabf
+  dependencies:
+  - java7
+jobs:
+- name: zookeeper
+  version: 248b68f994ccb636ca30f05d4dfb465b5032994a
+  fingerprint: 248b68f994ccb636ca30f05d4dfb465b5032994a
+  sha1: b7dd57e12ccc3a80121350c6925faf14326dc95a
+commit_hash: edfdba7a
+uncommitted_changes: false
+name: zookeeper-hybris
+version: '5.2'
