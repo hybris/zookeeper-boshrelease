@@ -1,0 +1,8 @@
+set -e
+set -x
+
+tar xzf zk-backyp/zk-backyp-0.1.tar.gz
+cd zk-backyp
+./build.sh
+
+mv bin/zk-backyp ${BOSH_INSTALL_TARGET}

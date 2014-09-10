@@ -1,0 +1,30 @@
+---
+name: zk-backyp
+templates:
+  ctl.erb: bin/ctl
+
+packages:
+- zk-backyp
+
+properties:
+  zookeeper.txlog_path:
+    description: "Zookeeper transaction log path"
+    default: /var/vcap/store/zookeeper
+  zookeeper.snapshot_path:
+    description: "Zookeeper snapshot path"
+    default: /var/vcap/store/zookeeper
+  zk-backyp.prefix:
+    description: "Backup Archive Prefix"
+    default: "zookeeper-backup"
+  zk-backyp.interval:
+    description: "Backup interval in seconds"
+    default: 86400
+  zk-backyp.s3_bucket:
+    description: "S3 Bucket"
+  zk-backyp.s3_endpoint:
+    description: "S3 Endpoint"
+    default: "https://s3.amazonaws.com"
+  zk-backyp.aws_access_key:
+    description: "AWS Access Key for S3"
+  zk-backyp.aws_secret_key:
+    description: "AWS Secret Key for S3"
