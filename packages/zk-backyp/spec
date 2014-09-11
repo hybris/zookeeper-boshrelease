@@ -5,4 +5,5 @@ dependencies:
 - zookeeper
 
 files:
-- zk-backyp/zk-backyp-0.1.tar.gz
+- golang/go1.3.1.linux-amd64.tar.gz
+- zk-backyp/**/*

@@ -22,10 +22,10 @@ properties:
     default: 0
   zookeeper.txlog_path:
     description: "Zookeeper transaction log path"
-    default: /var/vcap/store/zookeeper
+    default: "/var/vcap/store/zookeeper"
   zookeeper.snapshot_path:
     description: "Zookeeper snapshot path"
-    default: /var/vcap/store/zookeeper
+    default: "/var/vcap/store/zookeeper"
   zookeeper.keep_n_snapshots:
     description: "How many snapshots should be kept"
     default: 3

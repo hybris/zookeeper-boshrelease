@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-export ZKTX=<%=zookeeper.txlog_path %>
-export ZKSNAP=<%=zookeeper.snapshot_path %>
-export KEEP=<%=zookeeper.keep_n_snapshots %>
+export ZKTX=<%= p("zookeeper.txlog_path") %>
+export ZKSNAP=<%= p("zookeeper.snapshot_path") %>
+export KEEP=<%= p("zookeeper.keep_n_snapshots") %>
 
 #echo "Zookeeper Cleanup"
 #echo "================="
@@ -14,7 +14,9 @@ export KEEP=<%=zookeeper.keep_n_snapshots %>
 #echo ""
 
 reffile=`find $ZKSNAP -name "snapshot*" -type f -printf '%T@ %p\n' | sort -k 1nr | sed 's/^[^ ]* //' | sed "$KEEP!d"`
-find $ZKTX -name "log*" -type f ! -newer $reffile -exec ls -l {} \; -exec rm {} \;
+if [ ! -z $reffile ]; then 
+  find $ZKTX -name "log*" -type f ! -newer $reffile -exec ls -l {} \; -exec rm {} \;
+fi
 
 export DEL=$(($KEEP+1))
 delfile=`find $ZKSNAP -name "snapshot*" -type f -printf '%T@ %p\n' | sort -k 1nr | sed 's/^[^ ]* //' | sed "$DEL!d"`

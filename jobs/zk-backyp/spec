@@ -13,18 +13,18 @@ properties:
   zookeeper.snapshot_path:
     description: "Zookeeper snapshot path"
     default: /var/vcap/store/zookeeper
-  zk-backyp.prefix:
+  zk_backyp.prefix:
     description: "Backup Archive Prefix"
     default: "zookeeper-backup"
-  zk-backyp.interval:
+  zk_backyp.interval:
     description: "Backup interval in seconds"
     default: 86400
-  zk-backyp.s3_bucket:
+  zk_backyp.s3_bucket:
     description: "S3 Bucket"
-  zk-backyp.s3_endpoint:
+  zk_backyp.s3_endpoint:
     description: "S3 Endpoint"
     default: "https://s3.amazonaws.com"
-  zk-backyp.aws_access_key:
+  zk_backyp.aws_access_key:
     description: "AWS Access Key for S3"
-  zk-backyp.aws_secret_key:
+  zk_backyp.aws_secret_key:
     description: "AWS Secret Key for S3"
