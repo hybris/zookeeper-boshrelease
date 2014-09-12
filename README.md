@@ -90,16 +90,17 @@ We use this characteristic to implement a backup mechanism:
 
 ####The Backup process runs only on ONE Zookeeper node!
 
-To deploy the ZK-Backyp programm on an instance, add the zk-backyp template to the deployment manifest:
+To deploy the ZK-Backyp programm on an instance, add the zk-backyp template to a job in your deployment manifest. e.g.:
 
-    - name: kafka_zookeeper_prod_us-east-1c
-      instances: 1
-      templates:
-        - name: zookeeper
-          release: zookeeper-hybris
-        - name: zk-backyp
-          release: zookeeper-hybris
-      ...
+    jobs:
+      - name: kafka_zookeeper_prod_us-east-1c
+        instances: 1
+        templates:
+          - name: zookeeper
+            release: zookeeper-hybris
+          - name: zk-backyp
+            release: zookeeper-hybris
+        ...
 
 Further you have to set some properties to configure the backup name (built from prefix + datestring + .tar.gz), backup interval in seconds (default 86400 seconds = 1 day) as well as the S3 target.
 
