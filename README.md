@@ -76,7 +76,7 @@ bosh upload release releases/zookeeper-hybris-XXXX.yml
 
 ## <a name="backup"></a>Zookeeper-Backup
 
-To have the Zookeeper backed up regularly we have created a Go program that does backups regularly.
+To have the Zookeeper backed up regularly we have created a Go program that does backups automatically.
 You will find the source code at `src/zk-backyp`.
 
 ### How does it work?
