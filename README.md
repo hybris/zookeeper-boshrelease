@@ -82,7 +82,8 @@ You will find the source code at `src/zk-backyp`.
 ### How does it work?
 Zookeeper is an in-memory, distributed, non-sharded, consistent, fault-tolerant database. That means, on every node you have the same information. When one node fails its workload will be transferred to another node. You will get a higher latency for a moment but no query should get lost. All data is held in memory and is written to a transaction log on disk. From time to time a complete snapshot of the in-memory data is written to a snapshot file. The next transaction log starts from this snapshot.
 We use this characteristic to implement a backup mechanism:
-1. Shut down one Zookeeper node
+
+1. Shut down one Zookeeper node (other Zookeeper nodes will jump in and do its job, while it is down)
 2. tar czf snapshots and their incrementing transaction logs
 3. Restart the Zookeeper node
 4. Upload the backup .tar.gz to S3
