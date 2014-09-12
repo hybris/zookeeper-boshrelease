@@ -1,0 +1,4 @@
+check process zookeeper
+  with pidfile /var/lib/zookeeper/zookeeper_server.pid
+  start program "/usr/share/zookeeper/bin/zkServer.sh start"
+  stop program "/usr/share/zookeeper/bin/zkServer.sh stop"
