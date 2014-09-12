@@ -9,7 +9,8 @@ syncLimit=5
 # the directory where the snapshot is stored.
 # do not use /tmp for storage, /tmp here is just
 # example sakes.
-dataDir=/var/vcap/store/zookeeper
+dataLogDir=<%= p("zookeeper.txlog_path") %>
+dataDir=<%= p("zookeeper.snapshot_path") %>
 # the port at which the clients will connect
 clientPort=2181
 

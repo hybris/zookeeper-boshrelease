@@ -5,6 +5,8 @@ templates:
   zoo.cfg.erb: conf/zoo.cfg
   configuration.xsl.erb: conf/configuration.xsl
   log4j.properties.erb: conf/log4j.properties
+  zkcleanup.sh.erb: bin/zkcleanup.sh
+  zkcleanup.cron: /etc/cron.d/zkcleanup
   myid.erb: conf/myid
 
 packages:
@@ -18,5 +20,14 @@ properties:
   zookeeper.index_offset:
     description: "Offset value to add to the spec.index"
     default: 0
+  zookeeper.txlog_path:
+    description: "Zookeeper transaction log path"
+    default: "/var/vcap/store/zookeeper"
+  zookeeper.snapshot_path:
+    description: "Zookeeper snapshot path"
+    default: "/var/vcap/store/zookeeper"
+  zookeeper.keep_n_snapshots:
+    description: "How many snapshots should be kept"
+    default: 3
   networks.apps:
     description: "Used to get our IP address"

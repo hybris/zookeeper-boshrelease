@@ -7,7 +7,7 @@ java7/openjdk-1.7.0_55.tar.gz:
   object_id: ac6c8e9e-2aaf-4fb5-92a4-9f60b8f24ada
   sha: 0788b91b35bfdc628143103b17de3194c39a305a
   size: 31534443
-zookeeper/exhibitor-1.5.2-jar-with-dependencies.jar:
-  object_id: 066e25e2-dd0c-41f7-ab2b-109e4dda7865
-  sha: 2344217732dc736ab69b50b0574691d39820cf95
-  size: 19425377
+golang/go1.3.1.linux-amd64.tar.gz:
+  object_id: db753ec8-f9b1-41bd-94ad-772234e67b03
+  sha: 3af011cc19b21c7180f2604fd85fbc4ddde97143
+  size: 51930765
