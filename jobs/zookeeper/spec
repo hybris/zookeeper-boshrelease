@@ -5,8 +5,6 @@ templates:
   zoo.cfg.erb: conf/zoo.cfg
   configuration.xsl.erb: conf/configuration.xsl
   log4j.properties.erb: conf/log4j.properties
-  zkcleanup.sh.erb: bin/zkcleanup.sh
-  zkcleanup.cron: /etc/cron.d/zkcleanup
   myid.erb: conf/myid
 
 packages:
