@@ -23,6 +23,8 @@ case $1 in
 
     export ZK_BACKYP_INTERVAL=<%= p("zk_backyp.interval") %>
     export ZK_BACKYP_PREFIX=<%= p("zk_backyp.prefix") %>
+    export ZK_BACKYP_DOCLEANUP=<%= p("zk_backyp.do_cleanup") %>
+    export ZK_BACKYP_KEEP_N_SNAPSHOTS=<%= p("zk_backyp.keep_n_snapshots") %>
     export ZK_TXLOG_PATH=<%= p("zookeeper.txlog_path") %>
     export ZK_SNAPSHOT_PATH=<%= p("zookeeper.snapshot_path") %>
     export ZK_BACKYP_S3_BUCKET=<%= p("zk_backyp.s3_bucket") %>
