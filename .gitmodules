@@ -1,6 +1,5 @@
 [submodule "packages/java7"]
 	path = packages/java7
-	url = ssh://git@stash.hybris.com:7999/idefix/bosh-package-java7.git
-[submodule "src/zk-backyp"]
+	url = git@github.wdf.sap.corp:idefix/bosh-package-java7.git
 	path = src/zk-backyp
 	url = ssh://git@stash.hybris.com:7999/idefix/zk-backyp.git
