@@ -1,0 +1,32 @@
+---
+packages:
+- name: java7
+  version: 2d4e8651e20ae9c701440d88f6470b21f1a9c42e
+  sha1: 963d58d9519201db84c61ecb66dc251474025932
+  fingerprint: 2d4e8651e20ae9c701440d88f6470b21f1a9c42e
+  dependencies: []
+- name: zk-backyp
+  version: a9934a712dae0d0660aeffab8008720922d78ba4
+  sha1: de8a1e6e6eb9b9bf1d75ac88462eda5798228773
+  fingerprint: a9934a712dae0d0660aeffab8008720922d78ba4
+  dependencies:
+  - zookeeper
+- name: zookeeper
+  version: aa5e64500842e4a4cccf8968c48bb167fdd9eabf
+  sha1: 2a2d56901dbb4cec2b3032919c2c39c481b13151
+  fingerprint: aa5e64500842e4a4cccf8968c48bb167fdd9eabf
+  dependencies:
+  - java7
+jobs:
+- name: zk-backyp
+  version: 84dc645a62ad88f0e37484eee9ebe096a579e496
+  fingerprint: 84dc645a62ad88f0e37484eee9ebe096a579e496
+  sha1: e04f53007c3ab8b409965cdaac390a2dac349571
+- name: zookeeper
+  version: 963965ca81c54796f1661acb491f92fdf8fd307f
+  fingerprint: 963965ca81c54796f1661acb491f92fdf8fd307f
+  sha1: 3749d33c183cfccfa020edbaeb1a8cee455a3f51
+commit_hash: b15d7c0a
+uncommitted_changes: true
+name: zookeeper-hybris
+version: '6.5'
