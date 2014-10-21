@@ -3,11 +3,11 @@ zookeeper/zookeeper-3.4.6.tar.gz:
   object_id: 42470f2d-ee86-4923-834b-29a7e6a8620b
   sha: 2a9e53f5990dfe0965834a525fbcad226bf93474
   size: 17699306
-java7/openjdk-1.7.0_55.tar.gz:
-  object_id: ac6c8e9e-2aaf-4fb5-92a4-9f60b8f24ada
-  sha: 0788b91b35bfdc628143103b17de3194c39a305a
-  size: 31534443
 golang/go1.3.1.linux-amd64.tar.gz:
   object_id: db753ec8-f9b1-41bd-94ad-772234e67b03
   sha: 3af011cc19b21c7180f2604fd85fbc4ddde97143
   size: 51930765
+java7/openjdk-1.7.0_65.tar.gz:
+  object_id: 7d7b0372-d371-4430-ab1b-239b5e5539e1
+  sha: 8e6d34305e11bd151e458af0125411a4e1797e80
+  size: 67008821
