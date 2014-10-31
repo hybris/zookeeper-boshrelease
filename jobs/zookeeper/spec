@@ -24,5 +24,8 @@ properties:
   zookeeper.index_offset:
     description: "Offset value to add to the spec.index"
     default: 0
+  zookeeper.root.logger:
+    description: ZooKeeper logging configuration, format is "<default threshold> (, <appender>)+
+    default: WARN,CONSOLE
   networks.apps:
     description: "Used to get our IP address"

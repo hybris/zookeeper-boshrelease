@@ -25,19 +25,18 @@ case $1 in
 
     exec /var/vcap/packages/java7/bin/java \
         -Dzookeeper.log.dir="${LOG_DIR}" \
-        -Dzookeeper.root.logger="INFO,CONSOLE" \
+        -Dzookeeper.root.logger="<%= p("zookeeper.root.logger") %>" \
         -cp "${BIN_DIR}/build/classes:${BIN_DIR}/build/lib/*.jar:${BIN_DIR}/lib/slf4j-log4j12-1.6.1.jar:${BIN_DIR}/lib/slf4j-api-1.6.1.jar:${BIN_DIR}/lib/netty-3.7.0.Final.jar:${BIN_DIR}/lib/log4j-1.2.16.jar:${BIN_DIR}/lib/jline-0.9.94.jar:${BIN_DIR}/zookeeper-3.4.6.jar:${BIN_DIR}/src/java/lib/*.jar:${JOB_DIR}/conf:" \
         -Dcom.sun.management.jmxremote \
         -Dcom.sun.management.jmxremote.local.only=false \
         org.apache.zookeeper.server.quorum.QuorumPeerMain \
         "${JOB_DIR}/conf/zoo.cfg" \
-        >  $LOG_DIR/zookeeper.stdout.log \
-        >> $LOG_DIR/zookeeper.stderr.log
+        1>> $LOG_DIR/zookeeper.stdout.log \
+        2>> $LOG_DIR/zookeeper.stderr.log
 
     ;;
 
   stop)
-
     kill -9 `cat $PIDFILE`
 
     rm -f $PIDFILE
