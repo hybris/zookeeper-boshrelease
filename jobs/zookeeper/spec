@@ -13,6 +13,12 @@ packages:
 
 
 properties:
+  zookeeper.autopurge.purgeInterval:
+    description: "The time interval in hours for which the purge task has to be triggered. O is disabled"
+    default: 24
+  zookeeper.autopurge.snapRetainCount:
+    description: "How many snapshots should be kept"
+    default: 3
   zookeeper.txlog_path:
     description: "Zookeeper transaction log path"
     default: /var/vcap/store/zookeeper

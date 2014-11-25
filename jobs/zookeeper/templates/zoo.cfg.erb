@@ -14,6 +14,10 @@ dataDir=<%= p("zookeeper.snapshot_path") %>
 # the port at which the clients will connect
 clientPort=2181
 
+# autopurge
+autopurge.purgeInterval=<%= p("zookeeper.autopurge.purgeInterval") %>
+autopurge.snapRetainCount=<%= p("zookeeper.autopurge.snapRetainCount") %>
+
 <% if_p("zookeeper.servers") do %>
 <% p("zookeeper.servers").flatten.each_with_index do |ip,index|%>
 server.<%= index + 1 %>=<%= ip %>:2888:3888<% end %>
