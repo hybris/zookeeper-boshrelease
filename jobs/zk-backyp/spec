@@ -7,12 +7,6 @@ packages:
 - zk-backyp
 
 properties:
-  zk_backyp.do_cleanup:
-    description: "Remove old Snapshots and Transaction Logs before Backup"
-    default: "TRUE"
-  zk_backyp.keep_n_snapshots:
-    description: "How many snapshots should be kept"
-    default: "3"
   zk_backyp.prefix:
     description: "Backup Archive Prefix"
     default: "zookeeper-backup"
