@@ -15,6 +15,3 @@ cd zk-backyp
 ./build.sh
 
 mv bin/zk-backyp ${BOSH_INSTALL_TARGET}
-
-mv bin/zk-cleanup.sh ${BOSH_INSTALL_TARGET}
-chmod +x ${BOSH_INSTALL_TARGET}/zk-cleanup.sh
