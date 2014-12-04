@@ -30,4 +30,6 @@ builds:
     version: '6.9'
   14ffa2ab-6af6-40ba-ad38-dd641cfaaabb:
     version: '6.10'
+  92e886e3-eecd-41e3-bf5b-ee67d748a58b:
+    version: '6.11'
 format-version: '2'
