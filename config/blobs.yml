@@ -7,7 +7,7 @@ golang/go1.3.1.linux-amd64.tar.gz:
   object_id: db753ec8-f9b1-41bd-94ad-772234e67b03
   sha: 3af011cc19b21c7180f2604fd85fbc4ddde97143
   size: 51930765
-java7/openjdk-1.7.0_65.tar.gz:
-  object_id: 7d7b0372-d371-4430-ab1b-239b5e5539e1
-  sha: 8e6d34305e11bd151e458af0125411a4e1797e80
-  size: 67008821
+java/openjdk-jre-trusty-1.8.0_45.tar.gz:
+  object_id: 33c7c74d-a56c-42d7-9286-63dd958503b5
+  sha: 6517390047b05bdb8dd02b3895378112207abda7
+  size: 44988428

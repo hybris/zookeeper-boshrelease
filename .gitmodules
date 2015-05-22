@@ -1,6 +1,6 @@
-[submodule "packages/java7"]
-	path = packages/java7
-	url = git@github.wdf.sap.corp:idefix/bosh-package-java7.git
 [submodule "src/zk-backyp"]
 	path = src/zk-backyp
 	url = git@github.wdf.sap.corp:idefix/zk-backyp.git
+[submodule "packages/java"]
+	path = packages/java
+	url = https://github.wdf.sap.corp/idefix/bosh-package-java.git
