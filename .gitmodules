@@ -1,6 +1,6 @@
-[submodule "src/zk-backup"]
-	path = src/zk-backup
-	url = https://github.com/hybris/zk-backup.git
 [submodule "packages/java"]
 	path = packages/java
 	url = https://github.com/hybris/java-boshpackage.git
+[submodule "src/zk-backup"]
+	path = src/zk-backup
+	url = https://github.com/hybris/zk-backup.git
