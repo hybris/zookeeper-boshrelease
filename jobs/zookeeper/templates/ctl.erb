@@ -23,7 +23,7 @@ case $1 in
     export PATH=/var/vcap/packages/java/bin:$PATH
     export JAVA_HOME=/var/vcap/packages/java
 
-    exec /var/vcap/packages/java/bin/java \
+    exec chpst -u vcap:vcap /var/vcap/packages/java/bin/java \
         -Dzookeeper.log.dir="${LOG_DIR}" \
         -Dzookeeper.root.logger="<%= p("zookeeper.root.logger") %>" \
         -cp "${BIN_DIR}/build/classes:${BIN_DIR}/build/lib/*.jar:${BIN_DIR}/lib/slf4j-log4j12-1.6.1.jar:${BIN_DIR}/lib/slf4j-api-1.6.1.jar:${BIN_DIR}/lib/netty-3.7.0.Final.jar:${BIN_DIR}/lib/log4j-1.2.16.jar:${BIN_DIR}/lib/jline-0.9.94.jar:${BIN_DIR}/zookeeper-3.4.6.jar:${BIN_DIR}/src/java/lib/*.jar:${JOB_DIR}/conf:" \

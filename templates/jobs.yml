@@ -9,9 +9,9 @@ update:
   serial: false
 
 jobs:
-  - name: just_install_packages
+  - name: zookeeper
     templates:
-    - name: just_install_packages
+    - name: zookeeper
       release: zookeeper
     instances: 1
     persistent_disk: 0
