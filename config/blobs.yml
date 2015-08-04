@@ -1,13 +1,13 @@
 ---
-zookeeper/zookeeper-3.4.6.tar.gz:
-  object_id: 42470f2d-ee86-4923-834b-29a7e6a8620b
-  sha: 2a9e53f5990dfe0965834a525fbcad226bf93474
-  size: 17699306
 golang/go1.3.1.linux-amd64.tar.gz:
-  object_id: db753ec8-f9b1-41bd-94ad-772234e67b03
+  object_id: c436fd5a-abe8-4780-8278-d7b42809c10e
   sha: 3af011cc19b21c7180f2604fd85fbc4ddde97143
   size: 51930765
 java/openjdk-jre-trusty-1.8.0_45.tar.gz:
-  object_id: 33c7c74d-a56c-42d7-9286-63dd958503b5
+  object_id: b896b235-36a6-4777-88c0-09ab0ac557a4
   sha: 6517390047b05bdb8dd02b3895378112207abda7
   size: 44988428
+zookeeper/zookeeper-3.4.6.tar.gz:
+  object_id: 52d9108e-da22-4146-9769-353c9c3865ab
+  sha: 2a9e53f5990dfe0965834a525fbcad226bf93474
+  size: 17699306

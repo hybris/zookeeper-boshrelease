@@ -1,6 +1,6 @@
-[submodule "src/zk-backyp"]
-	path = src/zk-backyp
-	url = git@github.wdf.sap.corp:idefix/zk-backyp.git
+[submodule "src/zk-backup"]
+	path = src/zk-backup
+	url = https://github.com/hybris/zk-backup.git
 [submodule "packages/java"]
 	path = packages/java
-	url = https://github.wdf.sap.corp/idefix/bosh-package-java.git
+	url = https://github.com/hybris/java-boshpackage.git

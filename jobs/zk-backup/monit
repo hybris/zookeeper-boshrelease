@@ -1,0 +1,5 @@
+check process zk-backup
+  with pidfile /var/vcap/sys/run/zk-backup/pid
+  start program "/var/vcap/jobs/zk-backup/bin/ctl start"
+  stop program "/var/vcap/jobs/zk-backup/bin/ctl stop"
+  group vcap

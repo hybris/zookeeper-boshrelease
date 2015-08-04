@@ -1,0 +1,50 @@
+#!/bin/bash
+
+
+RUN_DIR=/var/vcap/sys/run/zk-backup
+LOG_DIR=/var/vcap/sys/log/zk-backup
+JOB_DIR=/var/vcap/jobs/zk-backup
+BIN_DIR=/var/vcap/packages/zk-backup
+DATA_DIR=/var/vcap/store/zk-backup
+PIDFILE=$RUN_DIR/pid
+
+case $1 in
+
+  start)
+    mkdir -p $RUN_DIR $LOG_DIR
+    mkdir -p $DATA_DIR
+    chown -R vcap:vcap $RUN_DIR $LOG_DIR
+
+    echo $$ > $PIDFILE
+
+    cd $DATA_DIR
+
+    export PATH=/var/vcap/bosh/bin/:$PATH
+
+    export ZK_BACKYP_INTERVAL=<%= p("zk_backyp.interval") %>
+    export ZK_BACKYP_PREFIX=<%= p("zk_backyp.prefix") %>
+    export ZK_TXLOG_PATH=<%= p("zookeeper.txlog_path") %>
+    export ZK_SNAPSHOT_PATH=<%= p("zookeeper.snapshot_path") %>
+    export ZK_BACKYP_S3_BUCKET=<%= p("zk_backyp.s3_bucket") %>
+    export ZK_BACKYP_S3_ENDPOINT=<%= p("zk_backyp.s3_endpoint") %>
+    export AWS_ACCESS_KEY_ID=<%= p("zk_backyp.aws_access_key") %>
+    export AWS_SECRET_ACCESS_KEY=<%= p("zk_backyp.aws_secret_key") %>
+
+    exec $BIN_DIR/zk-backup \
+        1>> $LOG_DIR/zk-backup.stdout.log \
+        2>> $LOG_DIR/zk-backup.stderr.log
+
+    ;;
+
+  stop)
+
+    kill -9 `cat $PIDFILE`
+
+    rm -f $PIDFILE
+
+    ;;
+
+  *)
+    echo "Usage: ctl {start|stop}" ;;
+
+esac

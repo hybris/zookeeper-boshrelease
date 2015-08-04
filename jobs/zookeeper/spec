@@ -11,7 +11,6 @@ packages:
 - java
 - zookeeper
 
-
 properties:
   zookeeper.autopurge.purgeInterval:
     description: "The time interval in hours for which the purge task has to be triggered. O is disabled"
@@ -33,5 +32,3 @@ properties:
   zookeeper.root.logger:
     description: ZooKeeper logging configuration, format is "<default threshold> (, <appender>)+
     default: WARN,CONSOLE
-  networks.apps:
-    description: "Used to get our IP address"

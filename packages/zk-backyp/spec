@@ -1,9 +1,0 @@
----
-name: zk-backyp
-
-dependencies:
-- zookeeper
-
-files:
-- golang/go1.3.1.linux-amd64.tar.gz
-- zk-backyp/**/*

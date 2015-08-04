@@ -1,5 +1,0 @@
-check process zk-backyp
-  with pidfile /var/vcap/sys/run/zk-backyp/pid
-  start program "/var/vcap/jobs/zk-backyp/bin/ctl start"
-  stop program "/var/vcap/jobs/zk-backyp/bin/ctl stop"
-  group vcap
