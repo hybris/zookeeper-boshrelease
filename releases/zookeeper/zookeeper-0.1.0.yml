@@ -1,0 +1,54 @@
+---
+packages:
+- name: java
+  version: !binary |-
+    MWRhYjI5NjE0YWJhNWRjZWMyYmMwM2MxZGQ3YzA2YWQyZTgwMzIxMg==
+  fingerprint: !binary |-
+    MWRhYjI5NjE0YWJhNWRjZWMyYmMwM2MxZGQ3YzA2YWQyZTgwMzIxMg==
+  sha1: !binary |-
+    ODU4MWYzMjM4MWZkMWJkZTI2ZmI0NDBmMzk4NmU3NTA2YWQ0ZTQyZQ==
+  dependencies: []
+- name: zk-backup
+  version: !binary |-
+    MmY4Y2JhNGI2YzFkMDIxZDg5MzEyYzg0OTU2YmE0OWZiZTIyODM1OA==
+  fingerprint: !binary |-
+    MmY4Y2JhNGI2YzFkMDIxZDg5MzEyYzg0OTU2YmE0OWZiZTIyODM1OA==
+  sha1: !binary |-
+    OTAwYjAyMmU3ZDY2ZmIxMDdhMzYxM2MwZDU2OWVmYmY3MjdmNjM0MQ==
+  dependencies:
+  - zookeeper
+- name: zookeeper
+  version: !binary |-
+    YWM2MmUyNzg4YWJiYzc0MTMyNzc1ZjMyMGM1NzdhOTM1YTlmNmRkYQ==
+  fingerprint: !binary |-
+    YWM2MmUyNzg4YWJiYzc0MTMyNzc1ZjMyMGM1NzdhOTM1YTlmNmRkYQ==
+  sha1: !binary |-
+    ZDk3NWIxMGU2OWQ0MDE4OTI5MTQ5NWVhNTc4ODc3YTRlZDFlZjcxYw==
+  dependencies:
+  - java
+jobs:
+- name: zk-backup
+  version: !binary |-
+    Zjg1ZmQ0ZmJhOWE5MGQ0ZTRlMDIxZjNmMDY5ZTMzMTdiMzczZjA3Ng==
+  fingerprint: !binary |-
+    Zjg1ZmQ0ZmJhOWE5MGQ0ZTRlMDIxZjNmMDY5ZTMzMTdiMzczZjA3Ng==
+  sha1: !binary |-
+    ODlhNGFiZWJjMGEwOGQxNDgyZDhkNDU1Y2IyNDU5YjlmNjRmYTE1YQ==
+- name: zookeeper
+  version: !binary |-
+    ZjBmM2JiZjZlN2RjMDExNjYxZmE4NmQ0Mzc3ODJlOWVjYWRlZjJlMQ==
+  fingerprint: !binary |-
+    ZjBmM2JiZjZlN2RjMDExNjYxZmE4NmQ0Mzc3ODJlOWVjYWRlZjJlMQ==
+  sha1: !binary |-
+    NjY3MDdjNjY5YTNmMTE1ZDRhOWRhMTY1MGUxNDI2NGU5OTA2MDA3ZQ==
+license:
+  version: !binary |-
+    NTY5YTQ4MTY2M2Y5NWIxMGNiODAzNTM5YmE2MWE4YzI0YTg4MTQ2Mw==
+  fingerprint: !binary |-
+    NTY5YTQ4MTY2M2Y5NWIxMGNiODAzNTM5YmE2MWE4YzI0YTg4MTQ2Mw==
+  sha1: !binary |-
+    ZmRjM2NmYzQzYmJhMDBhODk2NmYzMTM5NjZmMGFiZjJiNDEzNTFkMw==
+commit_hash: 87cb9b62
+uncommitted_changes: true
+name: zookeeper
+version: 0.1.0
