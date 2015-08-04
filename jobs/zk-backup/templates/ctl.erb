@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 RUN_DIR=/var/vcap/sys/run/zk-backup
 LOG_DIR=/var/vcap/sys/log/zk-backup
 JOB_DIR=/var/vcap/jobs/zk-backup
@@ -9,7 +8,6 @@ DATA_DIR=/var/vcap/store/zk-backup
 PIDFILE=$RUN_DIR/pid
 
 case $1 in
-
   start)
     mkdir -p $RUN_DIR $LOG_DIR
     mkdir -p $DATA_DIR
