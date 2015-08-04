@@ -9,9 +9,8 @@ PIDFILE=${RUN_DIR}/pid
 
 case $1 in
   start)
-    mkdir -p $RUN_DIR $LOG_DIR
-    mkdir -p $DATA_DIR
-    chown -R vcap:vcap $RUN_DIR $LOG_DIR
+    mkdir -p $RUN_DIR $LOG_DIR $DATA_DIR
+    chown -R vcap:vcap $RUN_DIR $LOG_DIR $DATA_DIR
 
     echo $$ > $PIDFILE
 
