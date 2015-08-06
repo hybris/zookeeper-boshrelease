@@ -7,8 +7,7 @@ ADD http://stedolan.github.io/jq/download/linux64/jq /usr/bin/
 RUN chmod 775 /usr/bin/jq
 
 # Install Go
-RUN \
-  mkdir -p /goroot && \
+RUN mkdir -p /goroot && \
   curl https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz | tar xvzf - -C /goroot --strip-components=1
 
 # Set environment variables.
